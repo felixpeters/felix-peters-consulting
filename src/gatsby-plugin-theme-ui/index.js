@@ -1,3 +1,4 @@
+/* eslint-disable import/no-default-export */
 /* eslint-disable prefer-destructuring */
 /**
  * This is our custom theme where we define global styles taken from our corporate identitfy.
@@ -17,7 +18,8 @@ breakpoints.xl = breakpoints[3]
  * Grey: Colors for items that are not that important
  */
 const colors = {
-  pageBackground: 'hsl(228, 33%, 97%)',
+  text: '#333',
+  pageBackground: 'hsl(0, 0%, 100%)',
   white: 'hsl(0, 0%, 100%)',
   primary: {
     100: 'hsl(221, 100%, 97%)',
@@ -87,50 +89,35 @@ const links = {
     fontWeight: 'bold',
   },
   nav: {
-    fontWeight: 'bold',
-    color: 'inherit',
+    fontWeight: 'normal',
+    color: 'primary.900',
     textDecoration: 'none',
+    px: 2,
+    py: 3,
   },
   blogPost: {
     textDecoration: 'underline',
   },
 }
 
-// eslint-disable-next-line import/no-default-export
+const fonts = {
+  body: 'system-ui, sans-serif',
+  heading: 'system-ui, sans-serif',
+  monospace: 'Menlo, monospace',
+}
+
+const styles = {
+  body: {
+    margin: 0,
+  },
+}
+
 export default {
   name: 'Default',
   breakpoints,
   colors,
+  fonts,
   space,
   links,
+  styles,
 }
-
-// export default {
-//   breakpoints: [
-
-//   ],
-//   colors: {
-//     text: "#333",
-//     background: "#fff",
-//     primary: "#639",
-//     secondary: "#ff6347",
-//   },
-//   fonts: {
-//     body: "system-ui, sans-serif",
-//     heading: "system-ui, sans-serif",
-//     monospace: "Menlo, monospace",
-//   },
-//   fontWeights: {
-//     body: 400,
-//     heading: 700,
-//     bold: 700,
-//   },
-//   lineHeights: {
-//     body: 1.5,
-//     heading: 1.125,
-//   },
-//   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-//   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-// }
-
-// const breakp
