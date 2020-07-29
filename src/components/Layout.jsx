@@ -4,6 +4,8 @@ import { Box } from 'theme-ui'
 
 import { Header } from './Header'
 
+import 'normalize.css'
+
 const Layout = ({ children }) => {
   return (
     <>

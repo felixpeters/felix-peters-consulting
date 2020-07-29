@@ -10,9 +10,10 @@ const Header = () => (
         <Flex
           sx={{
             flexDirection: ['column', 'row'],
-            justifyContent: 'flex-end',
+            justifyContent: ['center', 'flex-end'],
             alignItems: 'stretch',
             alignContent: 'center',
+            textAlign: 'center',
           }}
         >
           <ThemeLink as={Link} variant="nav" to="/home">
