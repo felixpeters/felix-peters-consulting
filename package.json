@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Felix Peters felix@felixpeters.me",
   "keywords": [
-    "gatsby"
+    " gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/felixpeters/felix-peters-consulting"
